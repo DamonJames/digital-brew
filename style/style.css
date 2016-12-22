@@ -5,12 +5,114 @@ body {
 
 .logo {
     width: 100%;
+    position: fixed;
+    visibility: hidden;
+}
+
+.logoCover {
+    width: 100%;
+    position: fixed;
+    right: 100%
 }
 
 .subHead {
     font-family: 'Press Start 2P', cursive;
-    margin: 5px;
+    margin: 10px 15px;
     position: fixed;
     bottom: 0px;
-    line-height: 130%;
+    line-height: 150%;
+    visibility: hidden;
+}
+
+ul {
+    list-style: none;
+    position: fixed;
+    padding: 10px;
+    margin: 0;
+    right: 2px;
+    bottom: 0px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.content {
+    max-width: 90%;
+    display: inline;
+    margin: 0.3% 5%;
+    text-align: center;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    padding: 5px;
+}
+
+.header {
+    width: 100%;
+    height: 37px;
+}
+
+.footer {
+    width: 100%;
+    height: 37px;
+}
+
+.boxAnim1 {
+    width: 0px;
+    height: 24px;
+    position: fixed;
+    bottom: 15px;
+    left: 13px;
+    float: left;
+    background-color: black;
+    border: 1px solid #000;
+    z-index: 1001;
+    visibility: hidden;
+}
+
+.boxAnim2 {
+    width: 0px;
+    height: 26px;
+    position: fixed;
+    bottom: 50px;
+    left: 13px;
+    float: left;
+    background-color: black;
+    border: 1px solid #000;
+    z-index: 1001;
+    visibility: hidden;
+}
+
+.boxAnim3 {
+    width: 0px;
+    height: 26px;
+    position: fixed;
+    bottom: 87px;
+    left: 13px;
+    float: left;
+    background-color: black;
+    border: 1px solid #000;
+    z-index: 1001;
+    visibility: hidden;
+}
+
+.boxAnim4 {
+    width: 0px;
+    height: 25px;
+    position: fixed;
+    bottom: 125px;
+    left: 13px;
+    float: left;
+    background-color: black;
+    border: 1px solid #000;
+    z-index: 1001;
+    visibility: hidden;
 }
