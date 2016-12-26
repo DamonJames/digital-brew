@@ -3,6 +3,25 @@ body {
     padding: 0;
 }
 
+div#loadScreen {
+    background: black;
+    opacity: 1;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+div#loadScreen > div#loading {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin: 300px auto;
+}
+
 .logo {
     width: 100%;
     position: fixed;
@@ -45,8 +64,17 @@ a:visited {
 .content {
     max-width: 90%;
     display: inline;
-    margin: 0.3% 5%;
+    margin: 0.2% 5%;
     text-align: center;
+}
+
+.aboutContent {
+    width: 96%;
+    max-width: 1000px;
+    display: inline;
+    margin: 0.2% 2%;
+    text-align: right;
+    float: right;
 }
 
 li {
@@ -63,6 +91,37 @@ li {
 .footer {
     width: 100%;
     height: 37px;
+}
+
+.info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 15%;
+    padding: 10px;
+    width: 350px;
+}
+
+.info1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    bottom: 0px;
+}
+
+@media only screen and (max-width: 871px) {
+    .info {
+        width: 90%;
+        position: relative;
+        padding: 15px;
+    }
+
+    .info1 {
+        position: relative;
+        padding: 15px;
+    }
 }
 
 .boxAnim1 {

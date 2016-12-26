@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('#loadScreen').delay(1000).animate({right: "100%"}, 1000)
+
     $('.logoCover').delay(2000).animate({right: "0%"}, 700, function() {
         $('.logo').css("visibility", "visible");
         $('.boxAnim4').css("visibility", "visible");
