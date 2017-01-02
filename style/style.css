@@ -61,6 +61,49 @@ a:visited {
     color: black;
 }
 
+.contact {
+    position: absolute;
+    top: 25%;
+    padding: 15px;
+    width: 45%;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.name {
+    width: 100%;
+    font-size: 15px;
+}
+
+.email {
+    width: 100%;
+    font-size: 15px;
+}
+
+.enquiry {
+    width: 100%;
+    font-size: 15px;
+    height: 80px;
+}
+
+.submit {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    font-size: 15px;
+}
+
+.contactInfo {
+    position: absolute;
+    width: 45%;
+    text-align: right;
+    top: 25%;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
 .content {
     max-width: 90%;
     display: inline;
