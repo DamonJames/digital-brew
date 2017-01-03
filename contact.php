@@ -29,12 +29,29 @@
     if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['enquiry'])) {
         echo $name = $_POST['name'];
         echo $email = $_POST['email'];
-        echo $enquiry = $_POST['enquiry']
-    }
+        echo $enquiry = $_POST['enquiry'];
+
+        if (!empty($name) && !empty($email) && !empty($enquiry)) {
+            
+            $to = 'damonmorris16@gmail.com';
+            $subject = 'Contact form submitted';
+            $body = $name."\n".$enquiry;
+            $headers = 'From: '.$email;
+
+            if (@mail($to, $subject, $body, $headers)) {
+                echo 'Thanks for contacting';
+            } else {
+                echo 'Sorry an error occured, please try again later';
+            }
+
+        } else {
+            echo 'All fields are required';
+        }
+    };
 
     ?>
 
-    <form action="contact.html" method="POST" class="contact">
+    <form action="contact.php" method="POST" class="contact">
         Name:<br>
         <input class="name" type="text" name="name"><br>
         E-mail:<br>
